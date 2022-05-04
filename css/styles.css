@@ -548,8 +548,25 @@ margin-right: 30px;
         .join-soc-link:focus .join-soc-icon {
             fill: #FFFFFF;
         }
+        .footer-field{
+            margin-left: 93px;
+            padding-bottom: 94px;
+        }
+        .footer-input{
+        
+        width: 358px;
+        height: 50px;
+        left: 815px;
+        top: 2787px;
+        background: #2F303A;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        }
         .footer-form{
         margin-bottom: 20px;
+       
         font-weight: 700;
         font-size: 14px;
         line-height: 1.7;
@@ -557,7 +574,27 @@ margin-right: 30px;
         text-transform: uppercase;
         color: #FFFFFF;
         }
-        .footer-field .
+        .footer-field .container{
+            display: flex;
+        }
+        .add-btn{
+           margin-left: 12px;
+            
+            width: 200px;
+            height: 50px;
+           
+            color: #FFFFFF;
+            background: #2196F3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+        .add-icon{
+            position: absolute;
+            margin-left: 10px;
+            align-items: center;
+            justify-content: center;
+           background-color: var(--accsent-color);
+        }
         /* модальне вікно*/
         .backdrop{
             position: fixed;
