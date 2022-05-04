@@ -701,28 +701,28 @@ text-align: left;
         appearance: none;
     }
     .modal-license::before{
-        content: "";
+        /*content: "";*/
         display: inline-block;
-        width: 16px;
-        height: 15px;
         background-color: #FFFFFF;
-        border: 2px solid #212121;
-        border-radius: 15%;
+        border: 2px solid ;
+        
+        border-radius: 2px;
     }
    
    .icon-check{
-       position: absolute;
+       position: relative;
        width: 16px;
        height: 15px;
        top: 50%;
        left: 0;
-       transform: translate(-50%);
-       display: inline-block;
+      /* transform: translate(-50%);*/
+       display: flex;
        justify-content: center;
        align-items: center;
        border: 2px solid var(--main-title-color);
        border-radius: 2x;
     background-image: url(../images/check.svg);
+    background-color: #2196F3;
 
 
    }
@@ -734,7 +734,6 @@ text-align: left;
         border:2px solid var(--accsent-color);
         border-radius: 2px;
         background-color: var(--accsent-color);
-        
         opacity: 1;
     }
     .button-license{
@@ -748,6 +747,11 @@ text-align: left;
     background-color: var(--accsent-color);
     border: 1px solid transparent;
     border-radius: 4px;
+    }
+    .form-icon{
+    display: flex;
+   
+   
     }
     
     
