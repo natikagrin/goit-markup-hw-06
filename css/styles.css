@@ -667,10 +667,9 @@ margin-right: 30px;
         height: 45px;
         border: 1px solid #757575;
         border-radius: 4px;
-        margin-bottom: 10px;
         padding-left: 42px;
-        outline: none;
-
+        outline: none;/*відключає підсвічування форми щоб задати ховер та фокус*/
+        transition: border-color 300ms;
     }
      
     .modal-input::placeholder{
@@ -682,6 +681,39 @@ margin-right: 30px;
     .modal-input:invalid{
         border-color: red;
     }*/
+    .modal-field {
+        margin-bottom: 10px;
+    }
+    
+    .modal-input-wrap {
+        position: relative;
+    }
+    
+    /*розмістити іконку по центру .modal-input-wrap {
+        position: relative; + .form-icon */
+    .form-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        transition: fill 300ms;
+    }
+    
+    .modal-input:hover {
+        border-color: var(--accsent-color);
+    }
+    
+    .modal-input:focus {
+        border-color: var(--accsent-color);
+    }
+    
+    .modal-input:hover +.form-icon {
+        fill: var(--accsent-color);
+    }
+    
+    .modal-input:focus +.form-icon {
+        fill: var(--accsent-color);
+    }
 .modal-label{
 font-family: Roboto, sans-serif;
 font-weight: 400;
@@ -703,62 +735,57 @@ text-align: left;
     resize: none;
     
     }
-    .checkbox{
+    /*.checkbox{
         appearance: none;
         display: flex;
-    }
-    /*.modal-license::before{
-        content: "";
-        display: inline-block;
-        background-color: #FFFFFF;
-        border: 2px solid ;
-        
-        border-radius: 2px;
     }*/
-   .modal-license{
-       margin-left: auto;
+    .check-icon{
+        fill: transparent;
+    }
+    .check-text span{
+        width: 15px;
+        height: 16px;
+        
+        border: 2px solid #000000;
+        border-radius: 2px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .input-check:checked +.check-text span{
+        background-color: var(--accsent-color);
+        border: none;}
+        .input-check:checked +.check-text .check-icon {
+            fill: var(--hero-title-color);}
 
-    font-family: Roboto,sans-serif;
+            /*.input-check:focus +.check-text span {
+                border-color: var(--accsent-color);
+            } +border: transparent; в .input-check:checked+.check-text span  зробить рамку іконки синього кольору*/
+    /* ще один варіант галочки .check-text::before{
+        content: "";
+        width: 15px;
+        height: 16px;
+        margin-right: 8px;
+        border: 2px solid #000000;
+        border-radius: 2px;
+    }
+   .check-text{
+       display: flex;
+       align-items: center;
+     font-family: Roboto,sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
-   }
-   .icon-check{
-       display:flex ;
-       position: absolute;
-       width: 16px;
-       height: 15px;
-       top: 442px;
-       left:52px;
-       justify-content: center;
-       align-items: center;
-       border: 2px solid var(--main-title-color);
-       border-radius: 2x;
-    background-image: url(../images/check.svg);
-    background-color: var(--hero-title-color);
-   }
-   .icon-check:hover{
-       background-color:var(--accsent-color);
-   }
-   .icon-check:focus{
-       background-color: var(--accsent-color);
-   }
-    .checkbox:checked + .icon-check{
-        /*width:16px ;
-        height: 15px;
-        top: 50%;
-        left: 0;*/
-        border:2px solid var(--accsent-color);
-        border-radius: 2px;
-        background-color: var(--accsent-color);
-        opacity: 1;
-    }
-    .checkbox-license{
+   }*/
+   
+    .checkbox-polisy{
         color: #2196F3;
     }
-    .button-license{
+
+    .button-form{
     display: inline-block;
     position: relative;
     padding: 10px 32px;
@@ -775,29 +802,7 @@ text-align: left;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     }
-    .modal-field{
-        position: relative;
-    }
-    .form-icon{
-        position: absolute;
-        top: 32px;
-        left: 15px;
-    }
-    .modal-input:hover {
-        border-color: var(--accsent-color);
-    }
     
-    .modal-input:focus {
-        border-color: var(--accsent-color);
-    }
-    
-    .modal-input:hover .form-icon{
-        fill: var(--accsent-color);
-    }
-    
-    .modal-input:focus .form-icon{
-        fill: var(--accsent-color);
-    }
     
     
     

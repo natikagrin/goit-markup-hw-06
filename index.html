@@ -407,6 +407,7 @@
         <form class="modal-form">
             <div class="modal-field">
             <label class="modal-label" for="user-name">Имя</label>
+            <div class="modal-input-wrap">
             <input type="text"
              class="modal-input"
               name="user-name" 
@@ -417,18 +418,21 @@
                 <use href="./images/symbol-defs.svg#icon-person-black"></use>
             </svg>
             </div>
+            </div>
         <div class="modal-field">
             <label  for="user-tel" class="modal-label">Телефон</label>
+            <div class="modal-input-wrap">
             <input type="tel" class="modal-input" name="user-tel" 
                  id="user-tel" 
                      required/>
                     <svg class="form-icon" width="13" height="13">
                         <use href="./images/symbol-defs.svg#icon-phone-black"></use>
                     </svg>
-            
+                </div>
                 </div>
                 <div class="modal-field">
                 <label class="modal-label" for="user-email">Почта</label>
+                <div class="modal-input-wrap">
                     <input type="email" class="modal-input" name="user-email" 
                     required 
                      id="user-email"/>
@@ -436,18 +440,26 @@
                         <use href="./images/symbol-defs.svg#icon-email-black"></use>
                     </svg>
                     </div>
+                    </div>
                     <div class="modal-field">
                     <label class="modal-label" for="user-text">Коментарий</label>
                         <textarea name="user-text" id="user-text" class="modal-text" 
                         placeholder="Введите текст"></textarea>
                         </div>
-                    <div class="checkbox">
-                    <label class="modal-license" for="checkbox">Соглашаюсь с рассылкой и принимаю
-                        <a href="" class="checkbox-license"> Условия договора</a></label>
-                   <input type="checkbox"name="lisens"id="checkbox" class="checkbox"/>
-                   <span class="icon-check"></span> 
+                    <div class="modal-field">
+                        <input type="checkbox" name="policy" 
+                        id="input-check" 
+                        class="input-check visually-hidden" 
+                        value="policy"/>
+                    <label for="input-check" class="check-text" >
+                   <span>
+                    <svg class="check-icon" width="11" height="8">
+                        <use href="./images/symbol-defs.svg#icon-check"></use>
+                    </svg>
+                   </span> Соглашаюсь с рассылкой и принимаю
+                <a href="" class="checkbox-policy"> Условия договора</a></label>
                 </div>
-                    <button type="submit" class="button-license">Отправить</button>
+                    <button type="submit" class="button-form">Отправить</button>
      </form> 
      </div>
  </div>
