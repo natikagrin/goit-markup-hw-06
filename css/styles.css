@@ -641,6 +641,12 @@ margin-right: 30px;
             background-color: transparent;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }   
+        .modal-close-icon:hover{
+            fill: #2196F3
+        }
+        .modal-close-icon:focus{
+            fill: #2196F3
+        }
     .is-hidden{
         opacity: 0;
         pointer-events: none;
@@ -711,7 +717,7 @@ text-align: left;
     }*/
    .modal-license{
        margin-left: auto;
-       
+
     font-family: Roboto,sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -748,6 +754,9 @@ text-align: left;
         border-radius: 2px;
         background-color: var(--accsent-color);
         opacity: 1;
+    }
+    .checkbox-license{
+        color: #2196F3;
     }
     .button-license{
     display: inline-block;
