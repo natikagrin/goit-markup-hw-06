@@ -548,12 +548,30 @@ margin-right: 30px;
         .join-soc-link:focus .join-soc-icon {
             fill: #FFFFFF;
         }
-        .footer-field{
+        .online{
             margin-left: 93px;
             padding-bottom: 94px;
+            flex-grow: 1;
         }
+        .online-title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+         }
+         .add-email{
+             border: none;
+             border: 1px solid rgba(255, 255, 255, 0.3);
+             background-color: transparent;
+         }
+         /*.add-fild{
+             width: 358px;
+             height: 50px;
+         }*/
         .footer-input{
-        
         width: 358px;
         height: 50px;
         left: 815px;
@@ -564,16 +582,7 @@ margin-right: 30px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         }
-        .footer-form{
-        margin-bottom: 20px;
        
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        }
         .footer-field .container{
             display: flex;
         }
@@ -587,7 +596,9 @@ margin-right: 30px;
             background: #2196F3;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
+           
         }
+      
         .add-icon{
             position: absolute;
             margin-left: 10px;
@@ -724,6 +735,9 @@ display: block;
 color: #757575;
 text-align: left;
     }
+    .modal-text:hover{
+        border-color: var(--accsent-color);
+    }
    
     .modal-text{
     width: 100%;
@@ -745,7 +759,6 @@ text-align: left;
     .check-text span{
         width: 15px;
         height: 16px;
-        
         border: 2px solid #000000;
         border-radius: 2px;
         margin-right: 8px;
@@ -753,12 +766,36 @@ text-align: left;
         align-items: center;
         justify-content: center;
     }
+    .text-check{
+        margin-top: -20px;
+        margin-bottom: 30px;
+        font-family: Roboto,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
     .input-check:checked +.check-text span{
         background-color: var(--accsent-color);
         border: none;}
         .input-check:checked +.check-text .check-icon {
             fill: var(--hero-title-color);}
-
+/*Приховати галочку інпут*/
+            .visually-hidden{
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                border: 0;
+                padding: 0;
+                white-space: nowrap;
+                clip-path: inset(100%);
+                clip: rect(0 0 0 0);
+                overflow: hidden;
+            }
+          
             /*.input-check:focus +.check-text span {
                 border-color: var(--accsent-color);
             } +border: transparent; в .input-check:checked+.check-text span  зробить рамку іконки синього кольору*/
@@ -788,14 +825,12 @@ text-align: left;
     .button-form{
     display: inline-block;
     position: relative;
-    padding: 10px 32px;
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     width: 200px;
     height: 50px;
-    top:30px;
     color: var(--hero-title-color);
     background-color: var(--accsent-color);
     border: 1px solid transparent;
