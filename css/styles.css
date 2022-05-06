@@ -590,16 +590,15 @@ margin-right: 30px;
            margin-left: 12px;
             padding-right: 62px;
             padding-left: 34px;
-         
             height: 50px;
-           
             color: #FFFFFF;
             background: #2196F3;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
-           
         }
-      
+    .add-btn:hover{
+    border: 1px solid transparent;
+    }
         .add-icon{
             position: absolute;
             margin-left: 10px;
@@ -713,7 +712,7 @@ margin-right: 30px;
         top: 50%;
         transform: translateY(-50%);
         left: 10px;
-        transition: fill 300ms;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .modal-input:hover {
@@ -772,9 +771,14 @@ text-align: left;
         align-items: center;
         justify-content: center;
     }
-    .text-check{
-        margin-top: -20px;
+     .check-text{
+        display: flex;
+        align-items: center;
         margin-bottom: 30px;
+    }
+    .text-check{
+        /*margin-top: -20px;
+        margin-bottom: 30px;*/
         font-family: Roboto,sans-serif;
         font-style: normal;
         font-weight: 400;
