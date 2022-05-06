@@ -588,8 +588,9 @@ margin-right: 30px;
         }
         .add-btn{
            margin-left: 12px;
-            
-            width: 200px;
+            padding-right: 62px;
+            padding-left: 34px;
+         
             height: 50px;
            
             color: #FFFFFF;
@@ -602,6 +603,7 @@ margin-right: 30px;
         .add-icon{
             position: absolute;
             margin-left: 10px;
+           
             align-items: center;
             justify-content: center;
            background-color: var(--accsent-color);
@@ -783,7 +785,7 @@ text-align: left;
     }
     .input-check:checked +.check-text span{
         background-color: var(--accsent-color);
-        border: none;}
+        border: transparent;}
         .input-check:checked +.check-text .check-icon {
             fill: var(--hero-title-color);}
 /*Приховати галочку інпут*/
@@ -800,9 +802,9 @@ text-align: left;
                 overflow: hidden;
             }
           
-            /*.input-check:focus +.check-text span {
+            .input-check:focus +.check-text span {
                 border-color: var(--accsent-color);
-            } +border: transparent; в .input-check:checked+.check-text span  зробить рамку іконки синього кольору*/
+            } /*+border: transparent; в .input-check:checked+.check-text span  зробить рамку іконки синього кольору*/
     /* ще один варіант галочки .check-text::before{
         content: "";
         width: 15px;
