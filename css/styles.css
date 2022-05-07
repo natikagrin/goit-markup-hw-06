@@ -594,11 +594,8 @@ margin-right: 30px;
             color: #FFFFFF;
             background: #2196F3;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-        }
-    .add-btn:hover{
-    border: 1px solid transparent;
-    }
+           border-radius: 4px;}
+   
         .add-icon{
             position: absolute;
             margin-left: 10px;
@@ -716,19 +713,19 @@ margin-right: 30px;
     }
     
     .modal-input:hover {
-        border-color: var(--accsent-color);
+        border-color:  #2196F3;
     }
     
     .modal-input:focus {
-        border-color: var(--accsent-color);
+        border-color: #2196F3;
     }
     
     .modal-input:hover +.form-icon {
-        fill: var(--accsent-color);
+        fill: #2196F3;
     }
     
     .modal-input:focus +.form-icon {
-        fill: var(--accsent-color);
+        fill: #2196F3;
     }
 .modal-label{
 font-family: Roboto, sans-serif;
@@ -739,6 +736,26 @@ letter-spacing: 0.01em;
 display: block;
 color: #757575;
 text-align: left;
+    }
+    .modal-coment{
+        position: absolute;
+        width: 448px;
+        height: 120px;
+        left: 576px;
+        top: 518px;
+        
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    }
+    .user-text{
+        font-family: Roboto sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        
+        color: rgba(117, 117, 117, 0.5);
     }
     .modal-text:hover{
         border-color: var(--accsent-color);
