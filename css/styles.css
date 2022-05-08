@@ -591,11 +591,16 @@ margin-right: 30px;
             padding-right: 62px;
             padding-left: 34px;
             height: 50px;
+            font-family: Roboto, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 30px;
             color: #FFFFFF;
             background: #2196F3;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
            border-radius: 4px;
            border: none;
+       
         }
         
   
@@ -744,7 +749,8 @@ letter-spacing: 0.01em;
 display: block;
 color: #757575;
 text-align: left;
-    }
+font-weight: 400;
+}
     .modal-coment{
         position: absolute;
         width: 448px;
@@ -794,6 +800,7 @@ text-align: left;
     }*/
     .check-icon{
         fill: transparent;
+        
     }
     .check-text span{
         width: 15px;
@@ -811,8 +818,6 @@ text-align: left;
         margin-bottom: 30px;
     }
     .text-check{
-        /*margin-top: -20px;
-        margin-bottom: 30px;*/
         font-family: Roboto,sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -862,8 +867,8 @@ text-align: left;
     color: #757575;
    }*/
    
-    .checkbox-polisy{
-        color: #2196F3;
+       .checkbox-policy{
+   color:  #2196F3;
     }
 
     .button-form{
