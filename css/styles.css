@@ -667,10 +667,17 @@ margin-right: 30px;
             background-color: transparent;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }   
+                .modal-close-btn:hover .modal-close-icon{
+                    color: #2196F3;
+                }
         .modal-close-icon:hover{
             fill: #2196F3
         }
+                .modal-close-btn:focus .modal-close-icon {
+                    color: #2196F3;
+                }
         .modal-close-icon:focus{
+            
             fill: #2196F3
         }
     .is-hidden{
