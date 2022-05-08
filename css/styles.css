@@ -823,6 +823,7 @@ font-weight: 400;
         display: flex;
         align-items: center;
         margin-bottom: 30px;
+        margin-left: 15px;
     }
     .text-check{
         font-family: Roboto,sans-serif;
